@@ -2,7 +2,7 @@
 
 ## 1. Patrón Arquitectónico Principal
 
-Se utilizará una arquitectura de **Microservicios** 
+Se utilizará una arquitectura multitenancy de **Microservicios** 
 
 [Image of Microservices Architecture Diagram]
  para desacoplar las funcionalidades principales (Autenticación, Gestión de Notas, Búsqueda) y permitir el escalado independiente.
