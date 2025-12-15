@@ -1,9 +1,13 @@
-Sistema de Gestión para Casamanquehue
+# Sistema de Gestión para Casamanquehue
 
-0. Contexto
-Sistema para la gestión de clientes y movimientos de dinero (cobros, ingresos, egresos y garantías), considerando Multitenencia y Mobile-first.
+## I. Contexto
+En este documento se presentan las especificaciones para
 
-1. Requerimientos Funcionales (RF):
+requerimientos del Sistema de gestión de clientes y movimientos (cobros, ingresos, egresos y garantías), considerando Mobile-first y Multitenency. Posteriormente el diseño del software.
+
+## II. Requerimientos
+
+### 1. Requerimientos Funcionales (RF):
 
 RF-1: Módulo Clientes:
 RF-1.1: Página Clientes: arriba botón "Enrolar"; Tabla Clientes (nombre, valor, descripción y acciones: datos|eliminar).
@@ -20,7 +24,7 @@ RF-3.1: Página Garantías: Tabla Clientes (nombre, garantía, pagado, pendiente
 RF-3.2: Página Garantías Consultar: arriba nombre y rut Cliente, botón "Registrar"; Tabla Garantías (fecha, tipo, valor, saldo y acción: eliminar).
 RF-3.3: Página Garantías Registrar: Formulario vacío para insertar Garantía; abajo "volver sin registrar Garantía" y "Registrar Garantía".
 
-2. Requerimientos No Funcionales (RNF)
+### 2. Requerimientos No Funcionales (RNF)
 
 RNF-1: Seguridad
 RNF-2: Confiabilidad
