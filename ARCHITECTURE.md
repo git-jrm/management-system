@@ -2,7 +2,7 @@
 
 ## 1. Patrón Arquitectónico Principal
 
-Se utilizará una arquitectura multitenancy de **Microservicios** 
+Se utilizará una arquitectura de **Microservicios** 
 
 [Image of Microservices Architecture Diagram]
  para desacoplar las funcionalidades principales (Autenticación, Gestión de Notas, Búsqueda) y permitir el escalado independiente.
@@ -26,5 +26,6 @@ Se utilizará una arquitectura multitenancy de **Microservicios**
 
 ## 4. Decisiones Clave (ADR)
 
-* **ADR-001: Token JWT vs. Sesiones:** Se eligió JWT para permitir un *stateless* (sin estado) entre servicios y simplificar la escalabilidad horizontal.
-* **ADR-002: Base de Datos Políglota:** PostgreSQL se usa para datos relacionales (usuarios), y MongoDB para datos menos estructurados/escalables (notas).
+* **ADR-001: Multitenancy:** Amazon Aurora con capacidad Multitenancy.
+
+* **ADR-001: Autenticación:** Se considera uso de Amazon Cognito para autenticación.
