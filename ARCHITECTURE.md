@@ -1,5 +1,27 @@
 # Arquitectura del Sistema: [Nombre del Proyecto]
 
+## 0. Lambdas Módulo Clientes:
+* CustomerCreate
+* CustomerRead
+* CustomerUpdate
+* CustomerDelete
+* CustomersList
+
+## 0. Lambdas Módulo Movimientos Cliente:
+* MovementCreate
+* MovementRead
+* MovementUpdate
+* MovementDelete
+* MovementsList
+
+## 0. Lambdas Módulo Garantías:
+* GuaranteeCreate
+* GuaranteeRead
+* GuaranteeUpdate
+* GuaranteeDelete
+* GuaranteeList
+
+
 ## 1. Patrón Arquitectónico Principal
 
 Se utilizará una arquitectura de **Microservicios** 
