@@ -1,5 +1,14 @@
 # Arquitectura del Sistema: [Nombre del Proyecto]
 
+## I. REQUERIMIENTO
+
+* I.1 Requerimiento inicial:
+* I.2 Requerimiento desarrollado y validado:
+
+## II. DIAGRAMA DE CONTEXTO
+
+## III. MICROSERVICIOS
+
 ## 0. Lambdas Módulo Clientes:
 * CustomerCreate
 * CustomerRead
@@ -51,3 +60,11 @@ Se utilizará una arquitectura de **Microservicios**
 * **ADR-001: Multitenancy:** Amazon Aurora con capacidad Multitenancy.
 
 * **ADR-001: Autenticación:** Se considera uso de Amazon Cognito para autenticación.
+
+
+## IV. BIBLIOGRAFÍA
+
+* https://aws.amazon.com/blogs/mobile/backends-for-frontends-pattern/
+* https://samnewman.io/patterns/architectural/bff/
+* https://netflixtechblog.com/seamlessly-swapping-the-api-backend-of-the-netflix-android-app-3d4317155187
+
