@@ -3,6 +3,9 @@
 ## I. REQUERIMIENTO
 
 * I.1 Requerimiento inicial:
+Se requiere administrar las siguientes entidades:
+** Clientes, Movimientos, Garantías e Inversiones.
+  
 * I.2 Requerimiento desarrollado y validado:
 
 ## II. DIAGRAMA DE CONTEXTO
