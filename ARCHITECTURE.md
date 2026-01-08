@@ -1,73 +1,46 @@
-# Arquitectura del Sistema: [Nombre del Proyecto]
+# Diseño de la solución: Plataforma integrada
 
-## I. REQUERIMIENTO
+## 1) C4 Context
 
-* I.1 Requerimiento inicial:
-Se requiere administrar las siguientes entidades:
-** Clientes, Movimientos, Garantías e Inversiones.
-  
-* I.2 Requerimiento desarrollado y validado:
+```mermaid
+C4Context
+    title C4 Context Diagram: Integrated Platform
 
-## II. DIAGRAMA DE CONTEXTO
+    Person(p_partner, "Partner User", "Business partner for key activities")
+    Person(p_mgmt, "Management User", "Manages operational and business information")
+    Person(p_client, "Client User", "Business client of the platform")
+    
+    Person(p_investor, "Investor User", "Capital partner and co-investor")
+    Person_Ext(p_web, "Web User", "Anonymous visitor of the public website")
 
-## III. MICROSERVICIOS
+    Enterprise_Boundary(b_aws, "AWS") {
 
-## 0. Lambdas Módulo Clientes:
-* CustomerCreate
-* CustomerRead
-* CustomerUpdate
-* CustomerDelete
-* CustomersList
+        System_Boundary(b_public, "Public") {
 
-## 0. Lambdas Módulo Movimientos Cliente:
-* MovementCreate
-* MovementRead
-* MovementUpdate
-* MovementDelete
-* MovementsList
+            System(sys_public_web, "Public Website", "Public-facing website")
+            Rel(p_web, sys_public_web, "Browses")
 
-## 0. Lambdas Módulo Garantías:
-* GuaranteeCreate
-* GuaranteeRead
-* GuaranteeUpdate
-* GuaranteeDelete
-* GuaranteeList
+            System_Ext(ext_economic_api, "Economic Indicators API", "External data provider")
+            Rel(sys_public_web, ext_economic_api, "Requests data")
 
+            System_Ext(ext_climate_api, "Climate Indicators API", "External data provider")
+            Rel(sys_public_web, ext_climate_api, "Requests data")
+        }
 
-## 1. Patrón Arquitectónico Principal
+        System_Boundary(b_private, "Private") {
 
-Se utilizará una arquitectura de **Microservicios** 
+            System(sys_management, "Management System", "Operational and administrative management")
+            Rel(p_client, sys_management, "Uses services")
+            Rel(p_mgmt, sys_management, "Manages and monitors")
 
-[Image of Microservices Architecture Diagram]
- para desacoplar las funcionalidades principales (Autenticación, Gestión de Notas, Búsqueda) y permitir el escalado independiente.
-
-## 2. Componentes Principales
-
-| Componente | Responsabilidad | Tecnología/Framework |
-| :--- | :--- | :--- |
-| **Servicio de Autenticación** | Gestión de usuarios, Login/Logout, Emisión de Tokens JWT. | Python (Flask) + PostgreSQL |
-| **Servicio de Notas** | CRUD de las notas, almacenamiento del contenido. | Node.js (Express) + MongoDB |
-| **API Gateway** | Punto de entrada único, enrutamiento y validación de JWT. | NGINX/Kong |
-| **Base de Datos** | Persistencia de datos de usuario (PostgreSQL) y contenido de notas (MongoDB). | AWS RDS/MongoDB Atlas |
-
-## 3. Flujo de Datos (Ejemplo: Creación de Nota)
-
-1. El Cliente envía una solicitud **POST /api/v1/notes** al **API Gateway**.
-2. **API Gateway** valida el token JWT.
-3. El Gateway enruta la solicitud al **Servicio de Notas**.
-4. El **Servicio de Notas** almacena el dato en MongoDB y responde al Gateway.
-5. **API Gateway** devuelve la respuesta al Cliente.
-
-## 4. Decisiones Clave (ADR)
-
-* **ADR-001: Multitenancy:** Amazon Aurora con capacidad Multitenancy.
-
-* **ADR-001: Autenticación:** Se considera uso de Amazon Cognito para autenticación.
-
-
-## IV. BIBLIOGRAFÍA
-
-* https://aws.amazon.com/blogs/mobile/backends-for-frontends-pattern/
-* https://samnewman.io/patterns/architectural/bff/
-* https://netflixtechblog.com/seamlessly-swapping-the-api-backend-of-the-netflix-android-app-3d4317155187
-
+            System(sys_activities, "Activities System", "Business activities coordination")
+            Rel(p_partner, sys_activities, "Collaborates")
+            Rel(sys_activities, sys_management, "Sends activity updates")
+            
+            
+            System(sys_investments, "Investments System", "Investment and portfolio management")
+            Rel(p_investor, sys_investments, "Consults investments")
+            Rel(sys_investments, sys_management, "Sends investments reports")
+        }
+    }
+```
