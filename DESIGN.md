@@ -10,3 +10,31 @@ C4Container
 ## Patterns
 
 Patterns to consider: ...
+
+
+## AWS Lambdas
+
+### Management System:
+
+#### Módulo Clientes:
+CustomerCreate
+CustomerRead
+CustomerUpdate
+CustomerDelete
+CustomersList
+#### Módulo Movimientos Cliente:
+MovementCreate
+MovementRead
+MovementUpdate
+MovementDelete
+MovementsList
+#### Módulo Garantías:
+GuaranteeCreate
+GuaranteeRead
+GuaranteeUpdate
+GuaranteeDelete
+GuaranteeList
+
+### Activities System:
+
+### Investment System:
