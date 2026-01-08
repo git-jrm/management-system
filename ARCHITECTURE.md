@@ -49,39 +49,7 @@ C4Context
 
 
 ```mermaid
-C4Container
-    title Integrated Platform Container diagram
 
-    Person(p1, "Management User", "Manages operational and business information")
-    Person(p3, "Client User", "Business client of the platform")
-    Person(p2, "Partner User", "Business partner for key activities")
-    Person(p4, "Investor User", "Capital partner and co-investor")
-    Person_Ext(p0, "Web User", "Anonymous visitor of the public website")
-
-    Enterprise_Boundary(b1, "Plarform in AWS") {
-
-        System_Boundary(b2, "Public") {
-            System(SystemAA, "Public Website", "Public-facing website")
-            Rel(p0, SystemAA, "Browses")
-
-            System_Ext(SystemA, "Economic Indicators", "API")
-            System_Ext(SystemB, "Climate Indicators", "API")
-            Rel(SystemAA, SystemA, "Request")
-            Rel(SystemAA, SystemB, "Request")
-        }
-        System_Boundary(b3, "Private") {
-            System(SystemAAA, "Managment System")
-            Rel(p3, SystemAAA, "Uses services")
-            Rel(p1, SystemAAA, "Manages and monitors")
-            Rel(SystemBBB, SystemAAA, "Data Update")
-
-            System(SystemBBB, "Activities System")
-            Rel(p2, SystemBBB, "Collaborates")
-
-            System(SystemCCC, "Investments System")
-            Rel(p4, SystemCCC, "Consult investments")
-        }
-    }
 ```
 
 
