@@ -1,5 +1,9 @@
 # Requisitos del Proyecto: Sistema de Gestión Financiera
 
+I.1 Requerimiento inicial: Se requiere administrar las siguientes entidades: ** Clientes, Movimientos, Garantías e Inversiones.
+
+I.2 Requerimiento desarrollado y validado:
+
 ## 1. Requisitos Funcionales (RF)
 
 ### RF-1: Módulo de Clientes
