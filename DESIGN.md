@@ -4,15 +4,16 @@
 
 ```mermaid
 C4Context
-    title Integrated Platform – Context Diagram
+    title C4 Context Diagram: Integrated Platform
 
+    Person(p_partner, "Partner User", "Business partner for key activities")
     Person(p_mgmt, "Management User", "Manages operational and business information")
     Person(p_client, "Client User", "Business client of the platform")
-    Person(p_partner, "Partner User", "Business partner for key activities")
+    
     Person(p_investor, "Investor User", "Capital partner and co-investor")
     Person_Ext(p_web, "Web User", "Anonymous visitor of the public website")
 
-    Enterprise_Boundary(b_aws, "Platform in AWS") {
+    Enterprise_Boundary(b_aws, "AWS") {
 
         System_Boundary(b_public, "Public") {
 
@@ -35,10 +36,11 @@ C4Context
             System(sys_activities, "Activities System", "Business activities coordination")
             Rel(p_partner, sys_activities, "Collaborates")
             Rel(sys_activities, sys_management, "Sends activity updates")
-
+            
+            
             System(sys_investments, "Investments System", "Investment and portfolio management")
             Rel(p_investor, sys_investments, "Consults investments")
+            Rel(sys_investments, sys_management, "Sends investments reports")
         }
     }
-
 ```
