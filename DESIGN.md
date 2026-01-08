@@ -1,6 +1,6 @@
 # Platform Technical Design
 
-## C4 Component
+## C4 Component Diagram (level 3)
 
 ```mermaid
 C4Container
