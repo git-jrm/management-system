@@ -2,13 +2,7 @@
 
 ## 1) C4 Context
 
-### Roles:
-#### • VISITANTE ANONIMO
-#### • ADMINISTRADOR
-#### • PARTNER
-#### • INVERSOR
-#### • INQUILIN@
-
+```mermaid
 C4Context
     title Integrated Platform Context diagram
 
@@ -39,14 +33,4 @@ C4Context
     Rel(SystemAA, SystemA, "Integrates")
     Rel(SystemAA, SystemB, "Synchronizes")
 
-
-
-
-## 2) C4 Container
-
-### Contenedores:
-#### • WEB PÚBLICA (VISITANTE): PROPUESTA DE VALOR Y MODELO DE NEGOCIO, DIFUSIÓN
-#### • SISTEMA INVERSIONES (INVERSORES)
-#### • SISTEMA GESTIÓN (ADMINISTRADORES)
-#### • SISTEMA ACTIVIDADES (PARTNERS)
-#### • PLATAFORMA COMUNIDAD (INQUILIN@)
+```
