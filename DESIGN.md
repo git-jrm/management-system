@@ -2,7 +2,7 @@
 
 ## C4 Component
 
-```
+```mermaid
 C4Container
     title Integrated Platform Component diagram
 ```
