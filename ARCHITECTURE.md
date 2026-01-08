@@ -1,6 +1,6 @@
 # Diseño de la solución: Plataforma integrada
 
-## C4 Context Diagram
+## C4 Context Diagram (level 1)
 
 ```mermaid
 C4Context
@@ -45,7 +45,7 @@ C4Context
     }
 ```
 
-## C4 Container Diagram
+## C4 Container Diagram (level 2)
 
 
 ```mermaid
