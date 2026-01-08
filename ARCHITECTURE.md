@@ -71,7 +71,7 @@ C4Container
     Person(p_investor, "Investor User", "Capital partner and co-investor")
 
     System_Boundary(b_system, "AWS") {
-
+        
         System(sys_activities, "Activities System", "Business activities coordination")
         Rel(p_partner, sys_activities, "Collaborates")
         Rel(sys_activities, sys_management, "Sends activity updates")
@@ -83,7 +83,26 @@ C4Container
         System(sys_investments, "Investments System", "Investment and portfolio management")
         Rel(p_investor, sys_investments, "Consults investments")
         Rel(sys_investments, sys_management, "Sends investments reports")
+
+        System_Boundary(b_activities,"Activities System"){
+            Container(c_activities, "Show Activities", "AWS Serverless")
+            Container(c_activities_admin, "Activities management", "AWS Serverless")
+            
+        }
+        System_Boundary(b_management,"Management System"){
+            Container(c_management, "Home management", "AWS Serverless")
+            Container(c_clients, "Clients management", "AWS Serverless")
+            Container(c_movement, "Movements management", "AWS Serverless")
+            Container(c_guarantees, "Guarantees management", "AWS Serverless")
+        }
+
+        System_Boundary(b_investment,"Investment System"){
+            Container(c_investment, "Home investment", "AWS Serverless")
+            
+        }
+
     }
+
 
 ```
 
