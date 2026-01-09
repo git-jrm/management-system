@@ -46,7 +46,7 @@ C4Container
     Person_Ext(p_web, "Web User", "Anonymous visitor of the public website")
     System_Boundary(b_system, "AWS") {
         System_Boundary(b_public,"Public Website"){
-            Container(c_investment, "Investment options", "AWS Serverless")
+            Container(c_investment, "Investments info", "AWS Serverless")
             Container(c_home, "Landing page", "AWS Serverless")
             Rel(p_web, c_home, "Browses")
             Rel(c_home, c_investment, "Navegate")
