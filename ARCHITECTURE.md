@@ -42,6 +42,10 @@ erDiagram
         UUID id_movement
         UUID id_client(FK)
     }
+
+    INVESTOR ||--o{ INVESTMENT : mantains
+    BUSINESS_PARTNER ||--o{ INVESTOR : mantains
+    MASTER_BUSINESS_PARTNER ||--o{ BUSINESS_PARTNER : mantains
 ```
 
 
