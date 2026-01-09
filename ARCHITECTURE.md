@@ -45,7 +45,9 @@ erDiagram
 ```
 
 
-## C4 Context Diagram (level 1)
+## C4 model
+
+### Context Diagram (level 1)
 
 ```mermaid
 C4Context
@@ -80,9 +82,9 @@ C4Context
 
 ```
 
-## C4 Container Diagram (level 2)
+### Container Diagram (level 2)
 
-### PUBLIC
+#### PUBLIC
 
 ```mermaid
 C4Container
@@ -103,7 +105,7 @@ C4Container
     }
 ```
 
-### PRIVATE
+#### PRIVATE
 
 ```mermaid
 
