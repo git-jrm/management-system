@@ -115,6 +115,45 @@ C4Container
 
 C4Container
     title C4 Container Diagram PRIVATE
+    Person(p_partner, "Partner User", "Business partner for key activities")
+    Person(p_mgmt, "Management User", "Manages operational and business information")
+
+    Person(p_client, "Client User", "Business client of the platform")
+    Person(p_investor, "Investor User", "Capital partner and co-investor")
+
+    System_Boundary(b_system, "AWS") {
+        
+        System_Boundary(b_management,"Management"){
+            
+            Container(c_management, "Mobile UI", "AWS Serverless")
+            Rel(p_mgmt, c_management, "Manages and monitors")
+            Rel(p_client, c_management, "Uses services")
+            
+            Container(c_clients, "Desktop UI", "AWS Serverless")
+            Container(c_mbff, "Mobile BFF", "AWS Serverless")
+            Container(c_dbff, "Desktop BFF", "AWS Serverless")
+            Container(c_guarantees, "Clients Microservice", "AWS Serverless")
+ContainerDb(db_system, "Transactional DB", "AWS Serverless DB")
+        }
+        System_Boundary(b_investment,"Investment"){
+            Container(c_simulations, "Investment simulations", "AWS Serverless")
+            Container(c_investment, "Home investment", "AWS Serverless")
+            
+            Rel(p_investor, c_investment, "Consults investments")
+            
+        }
+        System_Boundary(b_activities,"Activities"){
+            Container(c_activities, "Show Activities", "AWS Serverless")
+            Rel(p_partner, c_activities, "Collaborates")
+            BiRel(c_activities, db_system, "Data Access")
+        }
+
+        
+        
+
+    }
+C4Container
+    title C4 Container Diagram PRIVATE
 
     Person(p_partner, "Partner User", "Business partner for key activities")
     Person(p_mgmt, "Management User", "Manages operational and business information")
