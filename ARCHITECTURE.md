@@ -1,4 +1,4 @@
-# Diseño de la solución: Plataforma integrada
+# Architecture Integrated Platform
 
 ## I. Modelo Entidad-Relación
 
