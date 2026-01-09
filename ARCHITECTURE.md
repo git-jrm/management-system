@@ -1,6 +1,6 @@
 # Diseño de la solución: Plataforma integrada
 
-## Modelo Entidad-Relación
+## I. Modelo Entidad-Relación
 
 ```mermaid
 erDiagram
@@ -45,7 +45,7 @@ erDiagram
 ```
 
 
-## C4 model
+## II. C4 model
 
 ### Context Diagram (level 1)
 
