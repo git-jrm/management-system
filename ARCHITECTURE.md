@@ -1,5 +1,50 @@
 # Diseño de la solución: Plataforma integrada
 
+## Modelo Entidad-Relación
+
+```mermaid
+erDiagram
+    ADMIN ||--o{ BUSINESS : mantains
+    BUSINESS ||--o{ PARTNER : collaborates
+    BUSINESS ||--o{ CLIENT : pay
+    PARTNER
+    MANAGER ||--o{ BUSINESS : manages
+    CLIENT ||--o{ MOVEMENT : generate
+    BUSINESS ||--o{ MOVEMENT : incur
+    BUSINESS ||--o{ APPORTIONMENT : generate
+    MOVEMENT ||--o{ APPORTIONMENT : aggregation
+    MANAGER ||--o{ APPORTIONMENT : aggregation
+    ADMIN {
+        UUID id_admin
+    }
+    MANAGER {
+        UUID id_manager
+    }
+    BUSINESS {
+        UUID id_business
+        UUID id_admin(FK)
+        UUID id_manager(FK)
+    }
+    PARTNER {
+        UUID id_partner
+        UUID id_business(FK)
+    }
+    APPORTIONMENT{ 
+        UUID id_apportionment
+        UUID id_manager(FK)
+        UUID id_business(FK)
+    }
+    CLIENT {
+        UUID id_client
+        UUID id_business(FK)
+    }
+    MOVEMENT {
+        UUID id_movement
+        UUID id_client(FK)
+    }
+```
+
+
 ## C4 Context Diagram (level 1)
 
 ```mermaid
