@@ -12,8 +12,8 @@ erDiagram
     CLIENT ||--o{ MOVEMENT : generate
     BUSINESS ||--o{ MOVEMENT : incur
     BUSINESS ||--o{ APPORTIONMENT : generate
-    MOVEMENT ||--o{ APPORTIONMENT : aggregation
-    MANAGER ||--o{ APPORTIONMENT : aggregation
+    MOVEMENT ||--o{ APPORTIONMENT : grouped
+    MANAGER ||--o{ APPORTIONMENT : sees
     ADMIN {
         UUID id_admin
     }
@@ -33,6 +33,7 @@ erDiagram
         UUID id_apportionment
         UUID id_manager(FK)
         UUID id_business(FK)
+        int period
     }
     CLIENT {
         UUID id_client
@@ -41,6 +42,8 @@ erDiagram
     MOVEMENT {
         UUID id_movement
         UUID id_client(FK)
+        UUID id_business(FK)
+        date date
     }
 
     INVESTOR ||--o{ INVESTMENT : mantains
@@ -60,10 +63,10 @@ C4Context
     Person(p_partner, "Partner User", "Business partner for key activities")
     Person(p_mgmt, "Management User", "Manages operational and business information")
     Person(p_client, "Client User", "Business client of the platform")
-    Person(p_investor, "Investor User", "Capital partner and co-investor")
+    Person(p_investor, "Investor/BP/MBP User", "Capital partner and co-investor")
     Person_Ext(p_web, "Web User", "Anonymous visitor of the public website")
 
-    System_Boundary(b_system, "AWS") {
+    Boundary(b_system, "Integrated Platform") {
 
         System(sys_public_web, "Public Website", "Public-facing website")
         Rel(p_web, sys_public_web, "Browses")
@@ -83,7 +86,6 @@ C4Context
         System_Ext(ext_data_api, "Data Indicators API", "External data provider")
         Rel(sys_public_web, ext_data_api, "Requests data")
     }
-
 ```
 
 ### Container Diagram (level 2)
@@ -95,10 +97,10 @@ C4Container
     title C4 Container Diagram PUBLIC
 
     Person_Ext(p_web, "Web User", "Anonymous visitor of the public website")
-    System_Boundary(b_system, "AWS") {
+    Boundary(b_system, "Integrated Platform") {
         System_Boundary(b_public,"Public Website"){
-            Container(c_investment, "Investments info", "AWS Serverless")
-            Container(c_home, "Landing page", "AWS Serverless")
+            Container(c_investment, "Investments info", "Serverless")
+            Container(c_home, "Landing page", "Serverless")
             Rel(p_web, c_home, "Browses")
             Rel(c_home, c_investment, "Navegate")
         }
@@ -112,7 +114,6 @@ C4Container
 #### PRIVATE
 
 ```mermaid
-
 C4Container
     title C4 Container Diagram PRIVATE
     Person(p_partner, "Partner User", "Business partner for key activities")
@@ -120,27 +121,42 @@ C4Container
     Person(p_client, "Client User", "Business client of the platform")
     Person(p_investor, "Investor User", "Capital partner and co-investor")
 
-    System_Boundary(b_system, "AWS") {
+    Boundary(b_system, "Integrated Platform") {
         System_Boundary(b_management,"Management"){
-            Container(c_management, "Mobile UI", "AWS Serverless")
-            Rel(p_mgmt, c_management, "Manages and monitors")
-            Rel(p_client, c_management, "Uses services")
-            Container(c_clients, "Desktop UI", "AWS Serverless")
-            Container(c_mbff, "Mobile BFF", "AWS Serverless")
-            Container(c_dbff, "Desktop BFF", "AWS Serverless")
-            Container(c_guarantees, "Clients Microservice", "AWS Serverless")
-            ContainerDb(db_system, "Transactional DB", "AWS Serverless DB")
+            Container(c_mui, "UI", "Mobile Web App")
+            Rel(p_mgmt, c_mui, "Manages and monitors")
+            Rel(p_client, c_mui, "Uses services")
+            Container(c_dui, "UI", "Desktop Web App")
+            Container(c_mbff, "Backend", "Mobile BFF")
+            Rel(c_mui, c_mbff, "Consults investments")
+
+            Container(c_dbff, "Backend", "Desktop BFF")
+            Rel(c_dui, c_dbff, "Consults investments")
+
+            Container(c_clients, "Microservice", "Clients")
+            Rel(c_dbff, c_clients, "Microservice access")
+            Rel(c_mbff, c_clients, "Microservice access")
+
+            Container(c_movements, "Microservice", "Movements")
+            Rel(c_dbff, c_movements, "Microservice access")
+            Rel(c_mbff, c_movements, "Microservice access")
+
+            Container(c_apportionments, "Microservice", "Apportionments")
+
+            Container(c_, "Microservice", "Guarantees")
+
+
+            ContainerDb(db_system, "Database", "Transactional System")
         }
         System_Boundary(b_investment,"Investment"){
-            Container(c_simulations, "Investment simulations", "AWS Serverless")
-            Container(c_investment, "Home investment", "AWS Serverless")
+            Container(c_simulations, "Investment simulations", "Serverless")
+            Container(c_investment, "Home investment", "Serverless")
             Rel(p_investor, c_investment, "Consults investments")
         }
         System_Boundary(b_activities,"Activities"){
-            Container(c_activities, "Show Activities", "AWS Serverless")
+            Container(c_activities, "Show Activities", "Serverless")
             Rel(p_partner, c_activities, "Collaborates")
             BiRel(c_activities, db_system, "Data Access")
         }
     }
-
 ```
