@@ -4,24 +4,25 @@ Audience: Developers, Tech Lead, AI coding agents, inter alia.
 
 -How the system will function (behavior-oriented description of functionality).
 
+The System 
+
+The system to achive the **requeriments** is compose and formed by three interconnected applications plus a public website. Each one will be explained below.
+
 ## Detailed functional requirements
 
-The system allow register Manager User and his _Business_
+### API contracts
+### data models
+### integration points
+### edge cases
 
 
-## API contracts
-## data models
-## integration points
-## edge cases
+...
+...
+...
 
 
 -A detailed blueprint used to generate technical plans (plan.md) and task lists (tasks.md).
 
-
-
-...
-...
-...
 
 I.1 Requerimiento inicial: Se requiere administrar las siguientes entidades: ** Clientes, Movimientos, Garantías e Inversiones.
 
