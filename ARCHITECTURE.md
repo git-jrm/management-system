@@ -135,7 +135,68 @@ C4Container
 
 ```
 
-#### PRIVATE
+#### BUSINESS (PRIVATE)
+
+```mermaid
+C4Container
+    title C4 Container Diagram PRIVATE
+    Person(p_partner, "Partner User", "Business partner for key activities")
+    Person(p_mgmt, "Management User", "Manages operational and business information")
+    Person(p_client, "Client User", "Business client of the platform")
+    Person(p_investor, "Investor User", "Capital partner and co-investor")
+
+    Boundary(b_system, "Integrated Platform") {
+        System_Boundary(b_management,"Management"){
+            Container(c_mui, "Frontend UI", "Mobile Web App")
+            Rel(p_mgmt, c_mui, "Manages and monitors")
+            Rel(p_client, c_mui, "Uses services")
+            Container(c_dui, "Frontend UI", "Desktop Web App")
+            Container(c_mbff, "Backend For Frontend", "Mobile BFF")
+            Rel(c_mui, c_mbff, "Consults investments")
+
+            Container(c_dbff, "Backend For Frontend", "Desktop BFF")
+            Rel(c_dui, c_dbff, "Consults investments")
+
+            Container_Boundary(b_backend, "Backend Team"){
+                Container(c_clients, "Microservice", "Clients")
+                Rel(c_dbff, c_clients, "API")
+                Rel(c_mbff, c_clients, "API")
+
+                Container(c_movements, "Microservice", "Movements")
+                Rel(c_dbff, c_movements, "API")
+                Rel(c_mbff, c_movements, "API")
+
+                Container(c_apportionments, "Microservice", "Apportionments")
+                Rel(c_dbff, c_apportionments, "API")
+                Rel(c_mbff, c_apportionments, "API")
+
+                Container(c_guarantees, "Microservice", "Guarantees")
+                Rel(c_dbff, c_guarantees, "API")
+                Rel(c_mbff, c_guarantees, "API")
+
+            ContainerDb(db_system, "Databases", "System")
+            Rel(c_guarantees, db_system, "API")
+            Rel(c_apportionments, db_system, "API")
+            Rel(c_movements, db_system, "API")
+            Rel(c_clients, db_system, "API")
+
+            }
+        }
+        System_Boundary(b_investment,"Investment"){
+            Container(c_simulations, "Investment simulations", "Serverless")
+            Container(c_investment, "Home investment", "Serverless")
+            Rel(p_investor, c_investment, "Consults investments")
+        }
+        System_Boundary(b_activities,"Activities"){
+            Container(c_activities, "Show Activities", "Serverless")
+            Rel(p_partner, c_activities, "Collaborates")
+            BiRel(c_activities, db_system, "Data Access")
+        }
+    }
+
+```
+
+#### INVESTMENT (PRIVATE)
 
 ```mermaid
 C4Container
