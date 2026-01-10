@@ -123,30 +123,40 @@ C4Container
 
     Boundary(b_system, "Integrated Platform") {
         System_Boundary(b_management,"Management"){
-            Container(c_mui, "UI", "Mobile Web App")
+            Container(c_mui, "Frontend UI", "Mobile Web App")
             Rel(p_mgmt, c_mui, "Manages and monitors")
             Rel(p_client, c_mui, "Uses services")
-            Container(c_dui, "UI", "Desktop Web App")
-            Container(c_mbff, "Backend", "Mobile BFF")
+            Container(c_dui, "Frontend UI", "Desktop Web App")
+            Container(c_mbff, "Backend For Frontend", "Mobile BFF")
             Rel(c_mui, c_mbff, "Consults investments")
 
-            Container(c_dbff, "Backend", "Desktop BFF")
+            Container(c_dbff, "Backend For Frontend", "Desktop BFF")
             Rel(c_dui, c_dbff, "Consults investments")
 
-            Container(c_clients, "Microservice", "Clients")
-            Rel(c_dbff, c_clients, "Microservice access")
-            Rel(c_mbff, c_clients, "Microservice access")
+            Container_Boundary(b_backend, "Backend Team"){
+                Container(c_clients, "Microservice", "Clients")
+                Rel(c_dbff, c_clients, "API")
+                Rel(c_mbff, c_clients, "API")
 
-            Container(c_movements, "Microservice", "Movements")
-            Rel(c_dbff, c_movements, "Microservice access")
-            Rel(c_mbff, c_movements, "Microservice access")
+                Container(c_movements, "Microservice", "Movements")
+                Rel(c_dbff, c_movements, "API")
+                Rel(c_mbff, c_movements, "API")
 
-            Container(c_apportionments, "Microservice", "Apportionments")
+                Container(c_apportionments, "Microservice", "Apportionments")
+                Rel(c_dbff, c_apportionments, "API")
+                Rel(c_mbff, c_apportionments, "API")
 
-            Container(c_, "Microservice", "Guarantees")
-
+                Container(c_guarantees, "Microservice", "Guarantees")
+                Rel(c_dbff, c_guarantees, "API")
+                Rel(c_mbff, c_guarantees, "API")
 
             ContainerDb(db_system, "Database", "Transactional System")
+            Rel(c_guarantees, db_system, "API")
+            Rel(c_apportionments, db_system, "API")
+            Rel(c_movements, db_system, "API")
+            Rel(c_clients, db_system, "API")
+
+            }
         }
         System_Boundary(b_investment,"Investment"){
             Container(c_simulations, "Investment simulations", "Serverless")
