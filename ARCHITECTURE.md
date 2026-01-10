@@ -46,9 +46,36 @@ erDiagram
         date date
     }
 
-    INVESTOR ||--o{ INVESTMENT : mantains
-    BUSINESS_PARTNER ||--o{ INVESTOR : mantains
-    MASTER_BUSINESS_PARTNER ||--o{ BUSINESS_PARTNER : mantains
+    INVESTOR |o--o{ INVESTMENT : mantains
+    BUSINESS_PARTNER |o--o{ INVESTOR : mantains
+    MASTER_BUSINESS_PARTNER |o--o{ BUSINESS_PARTNER : mantains
+    
+    MASTER_BUSINESS_PARTNER {
+        UUID id_mbp
+    }
+    BUSINESS_PARTNER {
+        UUID id_bp
+    }
+    INVESTOR {
+        UUID id_investor
+        UUID id_mbp(FK)
+        UUID id_bp(FK)
+    }
+    INVESTMENT {
+        UUID id_investment
+        UUID id_mbp(FK)
+        UUID id_bp(FK)
+    }
+
+    REFERRED {
+        UUID id_referred
+        UUID id_mbp(FK)
+        UUID id_bp(FK)
+    }
+
+    
+    INVESTMENT |o--o{ PAYMENTS : mantains
+
 ```
 
 
@@ -61,7 +88,7 @@ C4Context
     title C4 Context Diagram
     
     Person(p_partner, "Partner User", "Business partner for key activities")
-    Person(p_mgmt, "Management User", "Manages operational and business information")
+    Person(p_mgmt, "Manager User", "Manages operational and business information")
     Person(p_client, "Client User", "Business client of the platform")
     Person(p_investor, "Investor/BP/MBP User", "Capital partner and co-investor")
     Person_Ext(p_web, "Web User", "Anonymous visitor of the public website")
@@ -86,6 +113,7 @@ C4Context
         System_Ext(ext_data_api, "Data Indicators API", "External data provider")
         Rel(sys_public_web, ext_data_api, "Requests data")
     }
+
 ```
 
 ### Container Diagram (level 2)
@@ -109,6 +137,7 @@ C4Container
             Rel(c_home, ext_data_api, "Requests data")
         }
     }
+
 ```
 
 #### PRIVATE
@@ -150,7 +179,7 @@ C4Container
                 Rel(c_dbff, c_guarantees, "API")
                 Rel(c_mbff, c_guarantees, "API")
 
-            ContainerDb(db_system, "Database", "Transactional System")
+            ContainerDb(db_system, "Databases", "System")
             Rel(c_guarantees, db_system, "API")
             Rel(c_apportionments, db_system, "API")
             Rel(c_movements, db_system, "API")
@@ -169,4 +198,5 @@ C4Container
             BiRel(c_activities, db_system, "Data Access")
         }
     }
+
 ```
