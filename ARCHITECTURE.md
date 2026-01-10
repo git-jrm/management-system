@@ -45,36 +45,31 @@ erDiagram
         UUID id_business(FK)
         date date
     }
+    BUSINESS_PARTNER |o--o{ INVESTMENT : mantains
+    M_BUSINESS_PARTNER |o--o{ BUSINESS_PARTNER : mantains
 
-    INVESTOR |o--o{ INVESTMENT : mantains
-    BUSINESS_PARTNER |o--o{ INVESTOR : mantains
-    MASTER_BUSINESS_PARTNER |o--o{ BUSINESS_PARTNER : mantains
-    
-    MASTER_BUSINESS_PARTNER {
-        UUID id_mbp
-    }
     BUSINESS_PARTNER {
         UUID id_bp
-    }
-    INVESTOR {
-        UUID id_investor
-        UUID id_mbp(FK)
-        UUID id_bp(FK)
     }
     INVESTMENT {
         UUID id_investment
         UUID id_mbp(FK)
         UUID id_bp(FK)
     }
-
     REFERRED {
         UUID id_referred
         UUID id_mbp(FK)
         UUID id_bp(FK)
     }
-
     
+    BUSINESS_PARTNER |o--o{ SIMULATIONS : mantains
     INVESTMENT |o--o{ PAYMENTS : mantains
+    BUSINESS_PARTNER |o--o{ REFERRED : mantains
+    PAYMENTS {
+        UUID id_payments
+        UUID id_investment(FK)
+        int int_
+    }
 
 ```
 
