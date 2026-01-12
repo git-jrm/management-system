@@ -1,37 +1,58 @@
 PROPUESTA DE VALOR
 
-(2)Nosotros
-Somos una empresa rentable y también una familia emprendedora. Ayudamos a personas enfocadas en sus objetivos que desean vivir en el mejor lugar y la mejor zona.
-+9Años de experiencia en la industria
-+60Contratos celebrados
-+$300MMillones invertidos
+Bienvenid@
 
-(3)🚀 Nuestra Plataforma
-Nos diferenciamos por nuestra plataforma única (desarrollo a medida) que nos permite centralizar la información relevante a cada una de las partes interesadas: inquilinos, socios e inversionistas. Además optimizamos todos los procesos críticos de operación, mantenimiento, financieros y de inversión.
+Nosotros 🏠
+En Casamanquehue ayudamos a personas enfocadas en sus objetivos que desean vivir en el mejor lugar y la mejor zona.
+Tenemos +9 años de experiencia en la industria, +60 contratos celebrados, +$300M invertidos en el negocio.
+[NUESTRA HISTORIA]
 
-(4)Nuestros servicios
-🏠 Para Inquilinos
-Disfruta de la vida arrendando habitación all-inclusive en la mejor ubicación
-Simplifica tu vida, te buscamos arriendo sin costo
-Gana dinero por objetivos voluntarios y haz retiros cuando necesites
-[¡GENIAL! BUSQUEN POR MÍ]
-🤝 Business Partner
-Genera dinero por cada actividad realizada sea administrativa o financiera
-Generas patrimonio ya que ganas en UF
-Realiza retiros en el momento que lo necesites
-[QUIERO SABER MÁS]
-💰 Co-Inversión
-Co-invierte con nosotros en rent-to-rent de habitaciones premium all-inclusive
-Logra la mayor rentabilidad del sector inmobiliario
-Invierte y obtén rentabilidad mensual más capital reajustado a UF
-[VER OPORTUNIDADES]
+Servicio all-inclusive ⭐
+Simplifica tu vida y disfruta de la mejor ubicación arrendando una habitación frente a estación Metro Manquehue con servicio all-inclusive, incluye cuentas, wifi, insumos básicos, aseo, coffee bar, entre otros.
+Estamos frente a estación Metro Manquehue y Apumanque.
+[QUIERO ARRENDAR]
 
-(7)Vive Las Condes
-🛡️ Vive Tranquilo
-Seguridad 24/7
-🌳 Las Condes Verde
-Sustentabilidad
-🎭 Cultura
-Corporación Cultural Las Condes
-🎭 Pueblito
-Centro artesanal Pueblito Los Dominicos
+Plataforma tecnológica 🚀
+Un aspecto que nos diferencia es que hemos desarrollado una plataforma tecnológica que nos permite optimizar la gestión de la información relevante de los procesos críticos de la operación, administración y finanzas, manteniendo informadas a las partes interesadas de forma oportuna sobre los aspectos de actividades, mantenimiento, finanzas e inversión, lo que nos diferencia frente a procesos manuales no optimizados.
+[CONOCE LA ARQUITECTURA]
+
+Business Partner 🤝
+Estamos en un proceso de expansión, apostando por el crecimiento del negocio y la reinversión de beneficios.
+Esto nos permite optimizar la operación, escalar de forma eficiente y capturar oportunidades en un mercado en crecimiento.
+·Genera impacto participando en la expansión de nuestro propósito.
+·Genera valor mientras obtienes ingresos pasivos.
+[SIMULAR INVERSIÓN][SIMULAR COMISIÓN]
+FOOTER
+
+Contáctanos
+Por cualquier consulta, sugerencia, reclamo, denuncia confidencial u otros.
+[ESCRÍBENOS]
+
+Vive Las Condes
+🛡️ Vive Tranquilo: Seguridad 24/7
+🌳 Las Condes Verde: Sustentabilidad
+🎭 Cultura: Corporación Cultural Las Condes
+🏺 Artesanía: Centro artesanal Pueblito Los Dominicos
+
+CASAMANQUEHUE
+— 9 años —
+Somos actores principales en la industria inmobiliaria de habitaciones
+Creemos en restaurar el sentido de comunidad segura donde cada persona pueda desarrollar su potencial
+Mejoramos la calidad de vida de las personas ofreciendo un ambiente armonioso con áreas comunes en una zona privilegiada
+Somos especialistas en arriendo de habitaciones all-inclusive a costo menor de valor mercado
+
+SITIO WEB
+Inicio
+Nosotros
+Servicios
+Inversiones
+Contacto
+
+INFORMACIÓN
+Política de Privacidad
+Términos y condiciones
+Lunes a Viernes
+9:00 AM a 6:00 PM
+Manquehue, Las Condes, Santiago de Chile
+
+© Casamanquehue • Todos los derechos reservados 2026
