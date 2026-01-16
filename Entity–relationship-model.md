@@ -5,7 +5,6 @@ erDiagram
     ADMIN ||--o{ BUSINESS : mantains
     BUSINESS ||--o{ COLLABORATOR : collaborates
     BUSINESS ||--o{ CLIENT : pay
-    PARTNER
     MANAGER ||--o{ BUSINESS : manages
     CLIENT ||--o{ MOVEMENT : generate
     BUSINESS ||--o{ MOVEMENT : incur
@@ -24,7 +23,7 @@ erDiagram
         UUID id_manager(FK)
     }
     COLLABORATOR {
-        UUID id_partner
+        UUID id_collaborator
         UUID id_business(FK)
     }
     APPORTIONMENT{ 
@@ -70,6 +69,10 @@ erDiagram
     PAYMENTS {
         UUID id_payments
         UUID id_investment(FK)
+        int int_amount
+    }
+    SIMULATION {
+        UUID id_simulation
         int int_amount
     }
 
