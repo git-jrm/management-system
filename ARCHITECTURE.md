@@ -1,8 +1,6 @@
-# Architecture Integrated Platform
+# Architecture Diagrams (C4 model)
 
-## C4 model
-
-### Context Diagram (level 1)
+## Context diagrams (level 1)
 
 ```mermaid
 C4Context
@@ -37,9 +35,9 @@ C4Context
 
 ```
 
-### Container Diagram (level 2)
+## Container Diagram (level 2)
 
-#### PUBLIC
+### PUBLIC
 
 ```mermaid
 C4Container
@@ -61,7 +59,7 @@ C4Container
 
 ```
 
-#### BUSINESS (PRIVATE)
+### BUSINESS (PRIVATE)
 
 ```mermaid
 C4Container
@@ -122,7 +120,7 @@ C4Container
 
 ```
 
-#### INVESTMENT (PRIVATE)
+### INVESTMENT (PRIVATE)
 
 ```mermaid
 C4Container
