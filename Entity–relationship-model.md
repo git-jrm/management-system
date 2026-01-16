@@ -1,4 +1,4 @@
-# Entity–Relationship model
+# Entity–relationship model
 
 ```mermaid
 erDiagram
