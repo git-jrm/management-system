@@ -12,7 +12,7 @@ C4Context
     Person(p_investor, "Investor/BP/MBP User", "Capital partner and co-investor")
     Person_Ext(p_web, "Web User", "Anonymous visitor of the public website")
 
-    Boundary(b_system, "Integrated Platform") {
+    Boundary(b_system, "Integrated Solution") {
 
         System(sys_public_web, "Public Website", "Public-facing website")
         Rel(p_web, sys_public_web, "Browses")
