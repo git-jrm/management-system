@@ -6,10 +6,10 @@
 C4Context
     title C4 Context Diagram
     
-    Person(p_partner, "Partner User", "Business partner for key activities")
+    Person(p_partner, "Collaborator User", "Collaborator for key activities")
     Person(p_mgmt, "Manager User", "Manages operational and business information")
     Person(p_client, "Client User", "Business client of the platform")
-    Person(p_investor, "Investor/BP/MBP User", "Capital partner and co-investor")
+    Person(p_investor, "Business Partner User", "Would be investor, referrer or MBP")
     Person_Ext(p_web, "Web User", "Anonymous visitor of the public website")
 
     Boundary(b_system, "Integrated Solution") {
