@@ -1,4 +1,4 @@
-# Modelo Entidad-Relación
+# Entity–Relationship model
 
 ```mermaid
 erDiagram
