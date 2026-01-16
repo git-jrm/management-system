@@ -3,7 +3,7 @@
 ```mermaid
 erDiagram
     ADMIN ||--o{ BUSINESS : mantains
-    BUSINESS ||--o{ PARTNER : collaborates
+    BUSINESS ||--o{ COLLABORATOR : collaborates
     BUSINESS ||--o{ CLIENT : pay
     PARTNER
     MANAGER ||--o{ BUSINESS : manages
@@ -23,7 +23,7 @@ erDiagram
         UUID id_admin(FK)
         UUID id_manager(FK)
     }
-    PARTNER {
+    COLLABORATOR {
         UUID id_partner
         UUID id_business(FK)
     }
