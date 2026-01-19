@@ -15,7 +15,7 @@ sequenceDiagram
     Model-->>+Partner: Commission
 ```
 
-## Master invite Partner
+## Master invite Partner to refer
 
 ```mermaid
 sequenceDiagram
