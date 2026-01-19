@@ -32,12 +32,9 @@ C4Context
         System_Ext(ext_data_api, "Data Indicators API", "External data provider")
         Rel(sys_public_web, ext_data_api, "Requests data")
     }
-
 ```
 
-## Container Diagram (level 2)
-
-### PUBLIC
+## Container Diagram (level 2) - PUBLIC
 
 ```mermaid
 C4Container
@@ -62,6 +59,8 @@ C4Container
         Rel(c_guests, c_login, "access")
     }
 ```
+
+## Container Diagram (level 2) - PRIVATE
 
 ### BUSINESS (PRIVATE)
 
