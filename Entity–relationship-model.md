@@ -44,10 +44,10 @@ erDiagram
     }
 ```
 
-## Entity–relationship model · Business
+## Entity–relationship model · Partner
 
 ```mermaid
-erDiagram
+   erDiagram
     PARTNER |o--o{ INVESTMENT : finances
     PARTNER |o--o{ SIMULATION : save
     PARTNER |o--o{ REFERRED : refer
@@ -58,27 +58,29 @@ erDiagram
         UUID id_bp_referrer(FK)
         bool master
     }
+    SIMULATION {
+        UUID id_simulation
+        UUID id_bp(FK)
+        int int_amount
+        date date_created
+    }
     INVESTMENT {
         UUID id_investment
         UUID id_bp(FK)
-        UUID id_bp_ref(FK)
-        UUID id_mbp(FK)
+        UUID id_bp_referrer(FK)
+        UUID id_mbp(FK)       
     }
     REFERRED {
         UUID id_referred
         UUID id_bp(FK)
         string email_referred
-        date sent_date
-        date accepted_date
+        date date_sent
+        date date_accepted
+        date date_canceled
     }
     PAYMENTS {
         UUID id_payments
         UUID id_investment(FK)
         int int_amount
     }
-    SIMULATION {
-        UUID id_simulation
-        int int_amount
-    }
-
 ```
