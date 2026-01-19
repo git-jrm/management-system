@@ -1,6 +1,4 @@
-# Architecture Diagrams
-
-## C4 Context diagrams
+## C4 Context diagram
 
 ```mermaid
 C4Context
