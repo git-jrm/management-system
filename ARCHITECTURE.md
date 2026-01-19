@@ -59,8 +59,6 @@ C4Container
 
 ## Container Diagram (level 2) - PRIVATE
 
-### BUSINESS (PRIVATE)
-
 ```mermaid
 C4Container
     title C4 Container Diagram PRIVATE
