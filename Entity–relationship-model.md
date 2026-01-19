@@ -50,7 +50,7 @@ erDiagram
    erDiagram
     PARTNER |o--o{ INVESTMENT : finances
     PARTNER |o--o{ SIMULATION : save
-    PARTNER |o--o{ REFERRED : refer
+    PARTNER |o--o{ REFERRAL : refer
     INVESTMENT |o--o{ PAYMENTS : mantains
     INVESTMENT |o--o| REFERRED : mantains
     PARTNER {
@@ -71,8 +71,8 @@ erDiagram
         UUID id_mbp(FK)
         int in_amount    
     }
-    REFERRED {
-        UUID id_referred
+    REFERRAL {
+        UUID id_referral
         UUID id_bp(FK)
         string st_email
         date dt_sent
