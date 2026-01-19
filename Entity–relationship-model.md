@@ -52,7 +52,7 @@ erDiagram
     PARTNER |o--o{ SIMULATION : save
     PARTNER |o--o{ REFERRAL : refer
     INVESTMENT |o--o{ PAYMENTS : mantains
-    INVESTMENT |o--o| REFERRED : mantains
+    INVESTMENT |o--o| REFERRAL : mantains
     PARTNER {
         UUID id_bp
         UUID id_bp_referral(FK)
