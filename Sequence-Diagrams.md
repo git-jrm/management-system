@@ -1,22 +1,29 @@
 ## Partner invests Investment
-
 ```mermaid
 sequenceDiagram
     Partner->>+Model: Invests
-    Model-->>-Partner: Benefits
+    Model-->>-Partner: Benefits 10-30%
 ```
-## Partner refer Referred
 
+## Partner refer Referred
 ```mermaid
 sequenceDiagram
     Partner->>+Referred: refers
     Referred->>+Model: Invests
-    Model-->>-Referred: Benefits
-    Model-->>+Partner: Commission
+    Model-->>-Referred: Benefits 10-30%
+    Model-->>+Partner: Commission 2%
+```
+
+## Master refer Referred
+```mermaid
+sequenceDiagram
+    Partner->>+Referred: refers
+    Referred->>+Model: Invests
+    Model-->>-Referred: Benefits 10-30%
+    Model-->>+Partner: Commission 4%
 ```
 
 ## Master invite Partner to refer
-
 ```mermaid
 sequenceDiagram
     participant MBP as Master Business Partner
@@ -27,7 +34,7 @@ sequenceDiagram
     MBP->>Partner: Invite
     Partner->>Ref: Reffer
     Ref->>BM: Invests
-    BM-->>Ref: Benefits (10-30%)
-    BM-->>Partner: Reference commission (4%)
-    BM-->>MBP: Master commission (6%)
+    BM-->>Ref: Benefits 10-30%
+    BM-->>Partner: Reference commission 4%
+    BM-->>MBP: Master commission 6%
 ```
