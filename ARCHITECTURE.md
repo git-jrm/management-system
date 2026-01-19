@@ -12,9 +12,9 @@ C4Context
     Person(p_investor, "Partner User", "Would be investor, referrer or MBP")
     Person_Ext(p_web, "Web User", "Anonymous visitor of the public website")
 
-    Boundary(b_system, "Integrated Solution") {
+    Boundary(b_system, "Solution") {
 
-        System(sys_public_web, "Public Website", "Public-facing website")
+        System(sys_public_web, "Public Site", "Public-facing website")
         Rel(p_web, sys_public_web, "Browses")
 
         System(sys_activities, "Activities System", "Business activities coordination")
@@ -28,9 +28,6 @@ C4Context
         System(sys_investments, "Investments System", "Investment and portfolio management")
         Rel(p_investor, sys_investments, "Consults investments")
         Rel(sys_investments, sys_management, "Sends investments reports")
-
-        System_Ext(ext_data_api, "Data Indicators API", "External data provider")
-        Rel(sys_public_web, ext_data_api, "Requests data")
     }
 ```
 
