@@ -1,6 +1,6 @@
-# Architecture Diagrams (C4 model)
+# Architecture Diagrams
 
-## Context diagrams (level 1)
+## C4 Context diagrams
 
 ```mermaid
 C4Context
@@ -31,7 +31,7 @@ C4Context
     }
 ```
 
-## Container Diagram (level 2) - PUBLIC
+## C4 Container Diagram · Public Site
 
 ```mermaid
 C4Container
@@ -57,7 +57,7 @@ C4Container
     }
 ```
 
-## Container Diagram (level 2) - PRIVATE
+## C4 Container Diagram · Activities System
 
 ```mermaid
 C4Container
@@ -118,7 +118,7 @@ C4Container
 
 ```
 
-### INVESTMENT (PRIVATE)
+## C4 Container Diagram · INVESTMENT System
 
 ```mermaid
 C4Container
