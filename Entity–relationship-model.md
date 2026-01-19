@@ -55,28 +55,29 @@ erDiagram
     INVESTMENT |o--o| REFERRED : mantains
     PARTNER {
         UUID id_bp
-        UUID id_bp_referrer(FK)
-        bool master
+        UUID id_bp_referral(FK)
+        bool is_master
     }
     SIMULATION {
         UUID id_simulation
         UUID id_bp(FK)
-        int int_amount
-        date date_created
+        int in_amount
+        date dt_created
     }
     INVESTMENT {
         UUID id_investment
         UUID id_bp(FK)
-        UUID id_bp_referrer(FK)
-        UUID id_mbp(FK)       
+        UUID id_bp_referral(FK)
+        UUID id_mbp(FK)
+        int in_amount    
     }
     REFERRED {
         UUID id_referred
         UUID id_bp(FK)
-        string email_referred
-        date date_sent
-        date date_accepted
-        date date_canceled
+        string st_email
+        date dt_sent
+        date dt_accepted
+        date dt_canceled
     }
     PAYMENTS {
         UUID id_payments
