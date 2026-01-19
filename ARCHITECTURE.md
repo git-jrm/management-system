@@ -44,17 +44,30 @@ C4Container
     title C4 Container Diagram PUBLIC
 
     Person_Ext(p_web, "Web User", "Anonymous visitor of the public website")
-    Boundary(b_system, "Integrated Platform") {
-        System_Boundary(b_public,"Public Website"){
-            Container(c_investment, "Investments info", "Serverless")
-            Container(c_home, "Landing page", "Serverless")
+    Boundary(b_system, "Solution") {
+        System_Boundary(b_public,"Public Site"){
+            Container(c_home, "Portal page", "Serverless")
+            Container(c_partners, "Partners page", "Serverless")
+            Container(c_guests, "Guests page", "Serverless")
+            Container(c_login, "Login page", "Serverless")
             Rel(p_web, c_home, "Browses")
-            Rel(c_home, c_investment, "Navegate")
+            Rel(c_home, c_partners, "Navegate")
+            Rel(c_home, c_guests, "Navegate")
+        }
+        System_Boundary(b_p,"Private Site"){
+            Container(c_home, "Portal page", "Serverless")
+            Container(c_partners, "Partners page", "Serverless")
+            Container(c_guests, "Guests page", "Serverless")
+            Container(c_login, "Secure Login", "Serverless")
+            
         }
         System_Boundary(b_ext,"External"){
-            System_Ext(ext_data_api, "Data Indicators API", "External data provider")
+            System_Ext(ext_data_api, "Data APIs", "External data provider")
             Rel(c_home, ext_data_api, "Requests data")
         }
+        Rel(c_home, c_login, "access")
+        Rel(c_partners, c_login, "access")
+        Rel(c_guests, c_login, "access")
     }
 
 ```
