@@ -178,6 +178,7 @@ C4Container
 ```
 
 ## C4 Container Diagram · Investment System
+```mermaid
 C4Container
     title C4 Container Diagram PRIVATE
 
@@ -222,5 +223,4 @@ C4Container
             }
         }
     }
-    
-
+```
