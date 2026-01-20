@@ -3,7 +3,9 @@ Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders,
 
 ## Requirements
 
-The new solution must be capable of modernizing the current isolated systems due silo software, with an integrated systems solution (Integrated Systems) that consists a comprehensive management platform and an investment platform  both to perform key activities.
+* The new solution must be capable of modernizing the current isolated systems due silo software, with an integrated systems solution (Integrated Systems) that consists a comprehensive management platform and an investment platform.
+
+* The new integrated platform must be able to evolve in accordance with the evolving needs of the business.
 
 ## high-level roles
 
