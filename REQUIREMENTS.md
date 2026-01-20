@@ -1,16 +1,25 @@
-# Requirements
+## Requirements
 
-Audience: Product managers, Product owner, Business analysts, Stakeholders, inter alia.
+Audience: Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders, inter alia.
 
-The system should be achieve to manage and automate the workflow and key activities. Primarry cashflow, guarantees, activities and investment, due the business need of to have visibilitity of global finalcial picture (success criteria).
+The new solution must be capable of modernizing the current isolated systems due silo software, with an integrated systems solution (Integrated Systems) that consists a comprehensive management platform and an investment platform  both to perform key activities.
+
+## high-level roles
+
+Management platform roles: Collaborators, Clients, Managers, Admins
+Investment platform role: Partners
 
 ## High-level user stories
 
-I. The system allow to _Manager User_ register their _Business_ and their _Clients_ only one time.
+* Collaborator can view the list of activities planned for the day.
+* Collaborator can mark activities as completed once they have finished them.
+* Collaborator see earned previous month and accumulated in current month.
 
-II. Accounts receivable will be generated automatically on a monthly basis.
+* Clients
 
-III. The _Manager User_ monthly should be entry _Movements_: **payments** for _Clients_ and **expenses** for _Business_.
+* Managers
+
+* Admins
 
 ### Acceptance criteria
 
