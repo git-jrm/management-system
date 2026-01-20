@@ -3,9 +3,9 @@ Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders,
 
 ## Requirements
 
-* The new solution must be capable of modernizing the current isolated systems due silo software, with an integrated systems solution (Integrated Systems) that consists a comprehensive management platform and an investment platform.
-
-* The new integrated platform must be able to evolve in accordance with the evolving needs of the business.
+* The new Integrated Systems solution must be capable of modernizing the current isolated systems due silo software, with an integrated systems solution (Integrated Systems) that consists a comprehensive management platform and an investment platform.
+* The integrated platform must be able to evolve in accordance with the evolving needs of the business.
+* The integrated platform must be Multi-tenancy architecture to support Multi-tenant.
 
 ## high-level roles
 
@@ -18,11 +18,9 @@ Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders,
 * Collaborator can mark activities as completed once they have finished them.
 * Collaborator see earned previous month and accumulated in current month.
 
-* Clients
+* Clients can view the payment history
 
-* Managers
-
-* Admins
+* Managers can add payment
 
 ## Acceptance criteria
 
