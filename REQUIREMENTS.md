@@ -1,13 +1,14 @@
-## Requirements
+### Audience
+Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders, inter alia.
 
-Audience: Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders, inter alia.
+## Requirements
 
 The new solution must be capable of modernizing the current isolated systems due silo software, with an integrated systems solution (Integrated Systems) that consists a comprehensive management platform and an investment platform  both to perform key activities.
 
 ## high-level roles
 
-Management platform roles: Collaborators, Clients, Managers, Admins
-Investment platform role: Partners
+* Management platform roles: Collaborators, Clients, Managers, Admins.
+* Investment platform role: Partners
 
 ## High-level user stories
 
@@ -21,5 +22,5 @@ Investment platform role: Partners
 
 * Admins
 
-### Acceptance criteria
+## Acceptance criteria
 
