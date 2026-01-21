@@ -47,7 +47,7 @@ C4Container
             Rel(c_home, c_partners, "Navegate")
             Rel(c_home, c_guests, "Navegate")
         }
-        System_Boundary(b_p,"Private Site"){
+        System_Boundary(b_p,"Private Solution"){
             Container(c_login, "Secure Login", "Serverless")
             
         }
