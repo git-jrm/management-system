@@ -31,7 +31,7 @@ sequenceDiagram
     participant Ref as Refer
     participant BM as Business Model
 
-    MBP->>Partner: Invite
+    MBP->>Partner: Invite (Reffer)
     Partner->>Ref: Reffer
     Ref->>BM: Invests
     BM-->>Ref: Benefits 10-30%
