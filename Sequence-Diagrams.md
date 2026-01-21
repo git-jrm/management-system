@@ -8,7 +8,7 @@ sequenceDiagram
 ## Partner refer Referred
 ```mermaid
 sequenceDiagram
-    Partner->>+Referred: refers
+    Partner->>+Referred: Refers
     Referred->>+Model: Invests
     Model-->>-Referred: Benefits 10-30%
     Model-->>+Partner: Commission 2%
@@ -17,7 +17,7 @@ sequenceDiagram
 ## Master refer Referred
 ```mermaid
 sequenceDiagram
-    Partner->>+Referred: refers
+    Partner->>+Referred: Refers
     Referred->>+Model: Invests
     Model-->>-Referred: Benefits 10-30%
     Model-->>+Partner: Commission 4%
