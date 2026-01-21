@@ -38,7 +38,7 @@ C4Container
     title C4 Container Diagram PUBLIC
 
     Person_Ext(p_web, "Web User", "Anonymous visitor of the public website")
-    Boundary(b_system, "Public Solution") {
+    Boundary(b_system, "Solution") {
         System_Boundary(b_public,"Public Site"){
             Container(c_home, "Portal page", "Serverless")
             Container(c_guests, "Guests page", "Serverless")
