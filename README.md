@@ -1,5 +1,8 @@
 # Integrated Platform
 
+* vertical software
+* critical mission software 
+
 Platform for managing cashflow, guarantees, activities and investment.
 
 * Stack: AWS ecosystem.
