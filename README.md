@@ -2,9 +2,14 @@
 
 Platform for managing cashflow, guarantees, activities and investment.
 
-Stack: AWS ecosystem.
+* Stack: AWS ecosystem.
+* Cloud Native.
+* Well-Architected Framework.
 
-
+The integrated systems consist in three platforms:
+* Activities System.
+* Management System.
+* Investments System.
 
 ## BIBLIOGRAFÍA
 
