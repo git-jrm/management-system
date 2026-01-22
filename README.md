@@ -7,8 +7,11 @@ Platform for managing cashflow, guarantees, activities and investment.
 * Well-Architected Framework.
 
 The integrated systems consist in three platforms:
-* Activities Platform: gamified activities system
-* Management Platform: to manage clients payments, balances, prorrateo, guarantees and key activities.
+* Activities Platform: Mobile Webapp gamified for activities
+
+* Management Platform:
+** to manage clients payments, balances, prorrateo, guarantees and key activities.
+
 * Investments Platform: to view the status of investment payments.
 
 ## BIBLIOGRAFÍA
