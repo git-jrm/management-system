@@ -10,7 +10,7 @@ The integrated systems consist in three platforms:
 * Activities Platform: Mobile Webapp gamified for activities
 
 * Management Platform:
-** to manage clients payments, balances, prorrateo, guarantees and key activities.
+- to manage clients payments, balances, prorrateo, guarantees and key activities.
 
 * Investments Platform: to view the status of investment payments.
 
