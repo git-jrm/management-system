@@ -23,7 +23,6 @@ C4Context
         Rel(p_client, sys_management, "Uses services")
         Rel(p_mgmt, sys_management, "Manages and monitors")
         Rel(p_mgmt, sys_investments, "Manages and monitors")
-        Rel(p_mgmt, sys_activities, "Manages and monitors")
 
         System(sys_investments, "Investments System", "Investment and portfolio management")
         Rel(p_investor, sys_investments, "Consults investments")
