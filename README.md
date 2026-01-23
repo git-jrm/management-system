@@ -16,6 +16,7 @@ The integrated systems consist in three platforms:
 - to manage clients payments, balances, prorrateo, guarantees and key activities.
 
 * Investments Platform: to view the status of investment payments.
+* click
 
 ## BIBLIOGRAFÍA
 
