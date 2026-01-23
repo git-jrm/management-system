@@ -24,3 +24,8 @@ The integrated systems consist in three platforms:
 * https://netflixtechblog.com/seamlessly-swapping-the-api-backend-of-the-netflix-android-app-3d4317155187
 
 * https://docs.aws.amazon.com/es_es/prescriptive-guidance/latest/micro-frontends-aws/introduction.html
+
+* https://serverlessland.com/patterns
+* https://docs.aws.amazon.com/es_es/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/single-page-application.html
+* https://aws.amazon.com/es/blogs/compute/server-side-rendering-micro-frontends-the-architecture/
+* 
