@@ -7,6 +7,12 @@ Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders,
 * The integrated platform must be Multi-tenancy architecture to support Multi-tenants.
 * And must be able to evolve in accordance with the evolving needs of the business.
 
+## Systems Log-in & Sign-up
+
+* Management: Login (without sign up).
+* Activities: Login (without sign up).
+* Investment: Login with sign up.
+
 ## Roles
 
 * Management platform roles: Collaborators, Clients, Managers.
