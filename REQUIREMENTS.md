@@ -9,9 +9,9 @@ Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders,
 
 ## Systems Log-in & Sign-up
 
-* Management: Login (without sign up).
-* Activities: Login (without sign up).
-* Investment: Login with sign up.
+* Management: Sign in.
+* Activities: Sign in.
+* Investment: Sign in with sign up.
 
 ## Roles
 
