@@ -24,9 +24,12 @@ The integrated systems consist in three platforms:
 * https://aws.amazon.com/blogs/mobile/backends-for-frontends-pattern/
 * https://netflixtechblog.com/seamlessly-swapping-the-api-backend-of-the-netflix-android-app-3d4317155187
 
-* https://docs.aws.amazon.com/es_es/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/single-page-application.html
+#### Arquitecturas de varios niveles sin servidor de AWS con Amazon API Gateway y AWS Lambda
+* https://docs.aws.amazon.com/es_es/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/welcome.html
+
 * https://aws.amazon.com/es/blogs/compute/server-side-rendering-micro-frontends-the-architecture/
 
 * https://samnewman.io/patterns/architectural/bff/
 * https://serverlessland.com/patterns
 * https://teamtopologies.com/key-concepts
+
