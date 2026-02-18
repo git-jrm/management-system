@@ -59,6 +59,35 @@ C4Container
 
 ```mermaid
 C4Container
+    title C4 Container Diagram Activities System
+
+    Person(p_mgmt, "Manager User", "Manages operational and business information")
+    Person(p_collaborator, "Collaborator User", "Business client of the platform")
+    Boundary(b_system, "Private Solution") {
+        System_Boundary(b_management,"Activities System"){
+            Container_Boundary(b_frontend, "Mobile Team"){
+                Container(c_fuim, "Frontend UI", "Mobile Web App")
+                Container(c_bffm, "Backend For Frontend", "Mobile BFF")
+            }
+            Container_Boundary(b_desktop, "Desktop Team"){
+                Container(c_fuid, "Frontend UI", "Desktop Web App")
+                Container(c_bffd, "Backend For Frontend", "Desktop BFF")
+            }
+            Container_Boundary(b_backend, "Backend Team"){
+                Container(c_mbff, "Backend For Frontend", "Mobile BFF")
+                Container(c_dbff, "Backend For Frontend", "Desktop BFF")
+                Container(c_clients, "Microservice", "Clients")
+                Container(c_movements, "Microservice", "Movements")
+                Container(c_apportionments, "Microservice", "Apportionments")
+                Container(c_guarantees, "Microservice", "Guarantees")
+                ContainerDb(db_system, "Databases", "System")
+            }
+        }
+    }
+```
+
+```mermaid
+C4Container
     title C4 Container Diagram PRIVATE
     Person(p_partner, "Partner User", "Business partner for key activities")
     Person(p_mgmt, "Management User", "Manages operational and business information")
