@@ -1,4 +1,5 @@
 ### Audience
+
 Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders, inter alia.
 
 ## High-level requirements
@@ -7,16 +8,16 @@ Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders,
 * The integrated platform must be Multi-tenancy architecture to support Multi-tenants.
 * And must be able to evolve in accordance with the evolving needs of the business.
 
-## Systems Log-in & Sign-up
+## Secure Systems Access
 
-* Management: Sign in.
-* Activities: Sign in.
-* Investment: Sign in with sign up.
+* Management: Sign-in.
+* Activities: Sign-in.
+* Investment: Sign-in + sign-up.
 
 ## Roles
 
-* Management platform roles: Collaborators, Clients, Managers.
-* Investment platform role: Partners
+* Management roles: Collaborators, Clients, Managers.
+* Investment role: Partners
 
 ## High-level user stories
 
@@ -30,6 +31,8 @@ Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders,
 * Managers can add and manage payments made by clients
 * Managers can manage Guarantees.
 * Managers can see the Balance sheet history.
+
+* Partners can Invest.
 
 
 ## Acceptance criteria
