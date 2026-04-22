@@ -26,6 +26,8 @@ Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders,
 * Collaborator can view the list of activities planned for the day.
 * Collaborator can mark activities as completed once they have finished them.
 * Collaborator see earned previous month and accumulated in current month.
+* Collabotator see the activities that not did finished previus days
+* Collabotator win bonus when completed all activities in a week.
 
 ### Collaborator stories
 
