@@ -19,21 +19,28 @@ Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders,
 * Management roles: Collaborators, Clients, Managers.
 * Investment role: Partners
 
-## High-level user stories
+## High-level users stories
+
+### Collaborator stories
 
 * Collaborator can view the list of activities planned for the day.
 * Collaborator can mark activities as completed once they have finished them.
 * Collaborator see earned previous month and accumulated in current month.
 
+### Collaborator stories
+
 * Clients can view the payment history
+
+### Collaborator stories
 
 * Managers can manage clients.
 * Managers can add and manage payments made by clients
 * Managers can manage Guarantees.
 * Managers can see the Balance sheet history.
 
-* Partners can Invest.
+### High-level stories
 
+* Partners can Invest.
 
 ## Acceptance criteria
 
