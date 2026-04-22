@@ -38,7 +38,7 @@ Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders,
 * Managers can manage Guarantees.
 * Managers can see the Balance sheet history.
 
-### High-level stories
+### Partners stories
 
 * Partners can Invest.
 
