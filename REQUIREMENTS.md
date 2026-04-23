@@ -4,8 +4,8 @@ Product managers (why/what), Product owner (how/when), Team (Dev), Stakeholders,
 
 ## High-level requirements
 
-* The new Integrated Systems must be capable of modernizing the current isolated systems due silo software, with an integrated systems solution (Integrated Systems) that consists a comprehensive management platform and an investment platform.
-* The integrated platform must be Multi-tenancy architecture to support Multi-tenants.
+* The new Integrated System must be capable of modernizing the platform by replacing the current isolated systems due to siloed software, with an integrated systems solution (Integrated System) that consists a comprehensive management platform and an investments platform.
+* The Integrated System must be Multi-tenancy architecture to support Multi-tenants.
 * And must be able to evolve in accordance with the evolving needs of the business.
 
 ## Secure Systems Access
