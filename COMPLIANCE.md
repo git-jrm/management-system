@@ -1,0 +1,2 @@
+-Ley de Protección de Datos Personales en Chile (Ley N° 21.719), publicada en diciembre de 2024.
+-Ley de ciberseguridad en Chile (Ley 21.663), promulgada en 2024.
