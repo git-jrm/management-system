@@ -1,1 +1,1 @@
-initial version  0.0
+conjunto de políticas, normas o marcos para conseguir los objetivos empresariales
