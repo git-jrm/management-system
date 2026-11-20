@@ -28,22 +28,3 @@ C4Context
         Rel(sys_investments, sys_management, "Sends investments reports")
     }
 ```
-
-
-## C4 Container diagram: Management System
-
-```mermaid
-C4Context
-    title C4 Container Diagram
-    
-    Person(p_client, "Client User", "Business client of the platform")
-    Person(p_mgmt, "Manager User", "Manages operational and business information")
-
-    Boundary(b_system, "Solution") {
-
-        System(sys_management, "Management System", "Operational and administrative management")
-        Rel(p_client, sys_management, "Uses services")
-        Rel(p_mgmt, sys_management, "Manages and monitors")
-
-    }
-```
