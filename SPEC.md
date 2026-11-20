@@ -15,14 +15,7 @@ The system to achive the **requeriments** is compose and formed by three interco
 ### integration points
 ### edge cases
 
-
-...
-...
-...
-
-
 -A detailed blueprint used to generate technical plans (plan.md) and task lists (tasks.md).
-
 
 I.1 Requerimiento inicial: Se requiere administrar las siguientes entidades: ** Clientes, Movimientos, Garantías e Inversiones.
 

@@ -1,4 +1,3 @@
- # TASK
+# TASKS
 
- * revisión completa rápida archivos .md
- * modelar Investor and Referred
+1.- 
