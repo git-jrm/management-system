@@ -4,6 +4,16 @@
 **Alcance:** Registro interno (logging) de cobros y pagos recurrentes realizados por transferencia bancaria o efectivo.  
 **Marco de Referencia:** Ley de Protección de Datos Personales en Chile (Ley N° 21.719, diciembre 2024) y Ley Marco de Ciberseguridad (Ley N° 21.663, 2024).
 
+## Compliance Index
+
+| ID | Control / Sección | Marco Normativo | Estado |
+| :--- | :--- | :--- | :--- |
+| [CMP-01](#1-alcance-y-exclusión-de-tarjetas) | Alcance y Exclusión de Tarjetas | No aplica PCI-DSS | Activo |
+| [CMP-02](#2-minimización-de-datos-ley-n-21719) | Minimización de Datos | Ley N° 21.719 | Activo |
+| [CMP-03](#3-seguridad-técnica-ley-n-21663) | Seguridad Técnica (Cifrado y Acceso) | Ley N° 21.663 | Activo |
+| [CMP-04](#4-ciclo-de-vida-y-derechos-de-los-titulares-ley-n-21719) | Ciclo de Vida y Derechos ARSOP | Ley N° 21.719 | Activo |
+| [CMP-05](#5-gestión-de-incidentes-ley-n-21663) | Gestión y Escalamiento de Incidentes | Ley N° 21.663 | Activo |
+
 ---
 
 ## 1. Alcance y Exclusión de Tarjetas
