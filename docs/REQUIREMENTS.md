@@ -14,15 +14,15 @@
 
 ---
 
-## 1. Functional Requirements (RF)
+## 1. Functional Requirements (FR)
 
 | ID | Rol | Requerimiento | Criterio de Aceptación |
 | :--- | :--- | :--- | :--- |
-| **REQ-01** | Manager | **Gestión de Clientes:** Enrolar, consultar, editar y eliminar clientes dentro de su organización. | El directorio permite buscar/paginar por nombre y valida datos obligatorios antes de guardar. |
-| **REQ-02** | Manager | **Gestión de Movimientos:** Registrar y administrar cobros y pagos recurrentes (transferencia o efectivo). | El saldo `adeudado` del cliente se actualiza automáticamente al registrar o eliminar un movimiento. |
-| **REQ-03** | Manager | **Gestión de Garantías:** Registrar y controlar garantías iniciales y abonos asociados a cada cliente. | El sistema calcula y mantiene al día los montos de `garantía`, `pagado` y `pendiente`. |
-| **REQ-04** | Manager | **Historial de Balance:** Consultar el estado financiero e historial de movimientos y saldos de la organización. | El Manager puede revisar el detalle cronológico de movimientos y saldos acumulados. |
-| **REQ-05** | Client | **Consulta de Pagos:** Visualizar el historial personal de pagos realizados y su estado actual. | El cliente accede a un portal de solo lectura donde ve únicamente sus propios registros. |
+| **FR-01** | Manager | **Gestión de Clientes:** Enrolar, consultar, editar y eliminar clientes dentro de su organización. | El directorio permite buscar/paginar por nombre y valida datos obligatorios antes de guardar. |
+| **FR-02** | Manager | **Gestión de Movimientos:** Registrar y administrar cobros y pagos recurrentes (transferencia o efectivo). | El saldo `adeudado` del cliente se actualiza automáticamente al registrar o eliminar un movimiento. |
+| **FR-03** | Manager | **Gestión de Garantías:** Registrar y controlar garantías iniciales y abonos asociados a cada cliente. | El sistema calcula y mantiene al día los montos de `garantía`, `pagado` y `pendiente`. |
+| **FR-04** | Manager | **Historial de Balance:** Consultar el estado financiero e historial de movimientos y saldos de la organización. | El Manager puede revisar el detalle cronológico de movimientos y saldos acumulados. |
+| **FR-05** | Client | **Consulta de Pagos:** Visualizar el historial personal de pagos realizados y su estado actual. | El cliente accede a un portal de solo lectura donde ve únicamente sus propios registros. |
 
 ---
 
