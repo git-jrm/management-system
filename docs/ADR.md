@@ -12,16 +12,6 @@ Log of key technical and product decisions made during the SaaS prototype develo
 
 ---
 
-## Template (Copy for new ADRs)
-
-    ### **ADR-XXXX**: [Short Title] | **Status**: Proposed / Accepted / Deprecated | **Date**: YYYY-MM-DD
-
-    * **Context:** What problem are we solving and what are the constraints?
-    * **Decision:** What did we choose to do?
-    * **Trade-offs:** What do we gain and what do we sacrifice?
-
----
-
 ## Decisions
 
 ### **ADR-001**: Log recurring payments | **Status**: Accepted | **Date**: 2026-11-20
@@ -45,3 +35,13 @@ Log of key technical and product decisions made during the SaaS prototype develo
 * **Context:** We need a reliable, fast-to-develop, and cost-effective stack to validate the prototype quickly with a small team.
 * **Decision:** Use a modern monolithic full-stack framework (e.g., Next.js / TypeScript) backed by a managed PostgreSQL database (e.g., Supabase) and cloud hosting with built-in TLS/encryption.
 * **Trade-offs:** High development velocity and low initial ops overhead, at the cost of potential refactoring if specific microservices are needed at massive scale.
+
+---
+
+## Template (Copy for new ADRs)
+
+    ### **ADR-XXXX**: [Short Title] | **Status**: Proposed / Accepted / Deprecated | **Date**: YYYY-MM-DD
+
+    * **Context:** What problem are we solving and what are the constraints?
+    * **Decision:** What did we choose to do?
+    * **Trade-offs:** What do we gain and what do we sacrifice?
