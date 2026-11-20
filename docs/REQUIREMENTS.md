@@ -16,7 +16,7 @@
 
 | ID | Role | Requirement | Acceptance Criteria |
 | :--- | :--- | :--- | :--- |
-| **REQ-01** | Manager | **Client Management:** Enroll, view, edit, and remove clients. | Client directory supports search/pagination and validates mandatory fields. |
+| **´REQ-01´** | Manager | **Client Management:** Enroll, view, edit, and remove clients. | Client directory supports search/pagination and validates mandatory fields. |
 | **REQ-02** | Manager | **Movements & Payments:** Register and manage payments (transfer/cash) and charges. | Client balance (`adeudado`) updates automatically upon adding or voiding movements. |
 | **REQ-03** | Manager | **Guarantees:** Track client collateral/guarantees and payments against them. | System accurately calculates `garantía`, `pagado`, and `pendiente` balances. |
 | **REQ-04** | Manager | **Balance History:** View historical balance sheet and financial summaries. | Manager can inspect historical movements and balances filtered by date. |
