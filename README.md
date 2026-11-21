@@ -25,14 +25,3 @@ All product, architecture, and compliance blueprints live in `/docs`:
 * [Serverless Multi-Tier Architectures with API Gateway & Lambda (AWS Whitepaper)](https://amazon.com)
 * [Serverless Applications Lens — AWS Well-Architected Framework](https://amazon.com)
 * [Serverless Land Patterns](https://serverlessland.com)
-
-
----
-
-* critical mission software 
-* Stack: AWS ecosystem.
-* Cloud Native.
-* Well-Architected Framework.
-
-
-
