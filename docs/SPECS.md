@@ -3,6 +3,18 @@
 **Audience:** Developers, Tech Lead, AI Coding Agents  
 **Purpose:** Technical blueprint for planning (`plan.md`) and task breakdown (`tasks.md`).
 
+## Specification Index
+
+| ID | Section | Traceability | Scope |
+| :--- | :--- | :--- | :--- |
+| [SPEC-01](#1-system-topology) | System Topology | `ADR-002`, `NFR-4` | Architecture & Apps |
+| [SPEC-02](#2-functional-modules--ui-behavior) | Functional Modules & UI Behavior | `REQ-01` to `REQ-05` | UI Flows & Rules |
+| [SPEC-03](#3-data-models-core-entities) | Data Models (Core Entities) | `NFR-1`, `CMP-02` | Database & RLS |
+| [SPEC-04](#4-api-contracts--edge-cases) | API Contracts & Edge Cases | `REQ-01` to `REQ-05`, `NFR-2` | Endpoints & Transactions |
+| [SPEC-05](#5-non-functional-implementation-nfr-1-to-nfr-4) | Non-Functional Implementation | `NFR-1` to `NFR-4`, `CMP-03` | Security, SLA & Scale |
+
+---
+
 ## 1. System Topology
 The system consists of **4 components (3 interconnected applications + 1 public website)**:
 1. **Public Website:** Landing page and product information.
